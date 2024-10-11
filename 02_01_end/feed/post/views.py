@@ -10,9 +10,9 @@ class IsAuthorReadOnly(BasePermission):
     """only authors should read posts"""
 
     def has_permission(self, request, view):
-        if not request.user.is_authenticated is True:
+        if not request.user.is_authenticated:
             return False
-        return request.method in SAFE_METHODS and request.user.profile.is_writer
+        return request.method in SAFE_METHODS and request.user.profile.is_writer is True
 
 
 class PostViewSet(ModelViewSet):

@@ -11,7 +11,7 @@ class User:
 
 
 def login(user):
-    """Gives access to users with privileges."""
+    """Gives access to users with privilages."""
     if user.can_login is True:
         print("All our secrets!!! 😨 😩 😱")
     else:
