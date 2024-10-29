@@ -10,4 +10,3 @@ class PostSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     created = serializers.DateTimeField(format='%a, %d %b %Y')
-    
