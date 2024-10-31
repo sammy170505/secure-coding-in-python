@@ -13,7 +13,7 @@ from sqlalchemy import Column, Integer, String, Float
 app = Flask(__name__)
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
-with open("secret_key", "r") as f:
+with open("secret_key.txt", "r") as f:
     app.secret_key = f.read().strip()
 
 app.config[
@@ -69,7 +69,7 @@ class Status(db.Model):
 
 def init_db():
     db.create_all()
-    click.secho('DB created succesfull', bg='green')
+    click.secho('DB created succesful', bg='green')
 
 
 @app.cli.command('create_db')

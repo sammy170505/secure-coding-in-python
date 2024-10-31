@@ -66,7 +66,7 @@ class Status(db.Model):
 
 def init_db():
     db.create_all()
-    click.secho('DB created succesfull', bg='green')
+    click.secho('DB created succesful', bg='green')
 
 
 @app.cli.command('create_db')
