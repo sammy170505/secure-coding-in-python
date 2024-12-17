@@ -21,6 +21,8 @@ flask-sqlalchemy = "*"
 marshmallow = "*"
 flask-marshmallow = "*"
 click = "*"
+django = "*"
+werkzeug = "*"
 
 [requires]
 python_version = "3.10"
